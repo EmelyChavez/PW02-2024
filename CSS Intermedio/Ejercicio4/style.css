@@ -1,0 +1,78 @@
+body{
+    background-color: #e5e5f7;
+    background: repeating-linear-gradient( 45deg, #c6c9fc, #c6c9fc 5px, #e5e5f7 5px, #e5e5f7 25px );
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:
+    "header header header"
+    "nav nav nav" 
+    "top-left . top-right"
+    ". middle ."
+    "bottom-left . bottom-right"
+    "footer footer footer";
+    margin: 10px;
+    border-radius: 10px;
+}
+header{
+    display: flex;
+    grid-area: header;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    grid-area: nav; 
+    list-style: none;
+    justify-content: center;
+    background-color: lightcyan;
+    border-radius: 10px;
+    
+}
+nav ul li{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: auto;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+}
+.sonic {
+    grid-area: top-left;
+}
+
+.sonic2 {
+    grid-area: top-right;
+}
+
+.lalaland {
+    grid-area: middle;
+}
+
+.rf5 {
+    grid-area: bottom-left;
+}
+
+.sisu {
+    grid-area: bottom-right;
+}
+footer{
+    grid-area: footer;
+}
+section > div {
+    display: flex; 
+    justify-content: center;
+    margin: 10px;
+}
+
+section > div img {
+    width: 300px; 
+    height: 400px; 
+}
+/*Referencias:
+Raptis, J. (n.d.). CSS Background Patterns by MagicPattern. MagicPattern. https://www.magicpattern.design/tools/css-backgrounds
+OpenAI. (2024). ChatGPT (GPT-4). Recuperado de https://www.openai.com/chatgpt
+*/
